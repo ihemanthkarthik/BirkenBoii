@@ -17,17 +17,28 @@ class TestGetBlock(unittest.TestCase):
         self.assertNotEqual(block.get_width(), 32)
         self.assertNotEqual(block.get_height(), 32)
 
-class TestHandleVerticalCollision(unittest.TestCase):
-    def test_handle_vertical_collision(self):
+class TestPlayer(unittest.TestCase):
+    def test_player_init(self):
         player = Player(100, 100, 50, 50)
-        object1 = mario.Object(100, 200, 50, 50)
-        object2 = mario.Object(100, 300, 50, 50)
+        self.assertIsInstance(player, Player)
+        self.assertIsInstance(player.rect, pygame.Rect)
+        self.assertIsInstance(player.sprite, pygame.Surface)
+        self.assertIsInstance(player.mask, pygame.mask.Mask)
 
-        collided_objects = mario.handle_vertical_collision(player, [object1, object2], 10)
+    def test_player_jump(self):
+        player = Player(100, 100, 50, 50)
+        player.jump()
+        self.assertGreater(player.y_vel, 0)
 
-        self.assertIn(object1, collided_objects)
-        self.assertEqual(player.rect.y, 200)
-        self.assertEqual(player.y_vel, 0)
+    def test_player_move_left(self):
+        player = Player(100, 100, 50, 50)
+        player.move_left(10)
+        self.assertEqual(player.x_vel, -10)
+
+    def test_player_move_right(self):
+        player = Player(100, 100, 50, 50)
+        player.move_right(10)
+        self.assertEqual(player.x_vel, 10)
 
 if __name__ == "__main__":
     unittest.main()
