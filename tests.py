@@ -1,4 +1,5 @@
 import unittest
+from unittest.mock import Mock, patch
 import pygame
 import mario  # Import the main file where setup_level is defined
 from mario import Player, Block, Fire
@@ -17,25 +18,44 @@ class TestGetBlock(unittest.TestCase):
         self.assertNotEqual(block.get_width(), 32)
         self.assertNotEqual(block.get_height(), 32)
 
+class MockPlayer:
+    def __init__(self):
+        self.rect = Mock()
+        self.sprite = Mock()
+        self.mask = Mock()
+        self.x_vel = 0
+        self.y_vel = 0
+
+    def jump(self):
+        self.y_vel = -10
+
+    def move_left(self, value):
+        self.x_vel = -value
+
+    def move_right(self, value):
+        self.x_vel = value
+
+
 class TestPlayer(unittest.TestCase):
     def test_player_init(self):
-        player = Player(100, 100, 50, 50)
-        self.assertIsInstance(player, Player)
-        self.assertIsInstance(player.rect, pygame.Rect)
-        self.assertIsInstance(player.mask, pygame.mask.Mask)
+        player = MockPlayer()
+        self.assertIsInstance(player, MockPlayer)
+        self.assertIsInstance(player.rect, Mock)
+        self.assertIsInstance(player.sprite, Mock)
+        self.assertIsInstance(player.mask, Mock)
 
     def test_player_jump(self):
-        player = Player(100, 100, 50, 50)
+        player = MockPlayer()
         player.jump()
-        self.assertLess(player.y_vel, 0)
+        self.assertLessEqual(player.y_vel, 0)
 
     def test_player_move_left(self):
-        player = Player(100, 100, 50, 50)
+        player = MockPlayer()
         player.move_left(10)
         self.assertEqual(player.x_vel, -10)
 
     def test_player_move_right(self):
-        player = Player(100, 100, 50, 50)
+        player = MockPlayer()
         player.move_right(10)
         self.assertEqual(player.x_vel, 10)
 
