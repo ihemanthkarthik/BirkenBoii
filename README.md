@@ -1,6 +1,15 @@
 # BirkenBoii
 Birken Boii is a simple platformer game created using Pygame. It features a pink character navigating through a level filled with obstacles, traps, and platforms. The game includes basic movements such as running, jumping, and a double jump. Be cautious of the fire traps!
 
+## Features
+Platformer game with basic controls.
+Dynamic background and character animations.
+Sound effects for an immersive experience.
+Level design with obstacles and traps.
+
+## Technical Aspects
+Build Management and Automated Testcases are done using Github Actions.
+
 ## Installation
 1. Clone the repository: https://github.com/ihemanthkarthik/BirkenBoii.git
 2. Navigate to the project directory: cd Birken-Boiii
@@ -26,12 +35,6 @@ A sequence diagram is a visual representation of the interactions and order of m
 A state diagram is a visual representation of the possible states, transitions, and events that a system or object can undergo, providing a concise overview of its behavior.
 
 **[State Diagram](https://github.com/ihemanthkarthik/BirkenBoii/blob/ac163d9bb6ffd0d13b97221249e8c23e6b38a134/UML/State%20Diagram.jpg)**
-
-## Features
-Platformer game with basic controls.
-Dynamic background and character animations.
-Sound effects for an immersive experience.
-Level design with obstacles and traps.
 
 ## Contributions
 Contributions are welcome! If you find any issues or have ideas for improvements, feel free to open an issue.
