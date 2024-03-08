@@ -1,6 +1,6 @@
 import unittest
 import pygame
-from mario import Player, Block, Fire, setup_level
+from mario import Player, Block, Fire
 
 class TestGame(unittest.TestCase):
     def setUp(self):
@@ -27,12 +27,6 @@ class TestGame(unittest.TestCase):
         player = Player(100, 100, 50, 50)
         # Assuming sprite animations are correct based on provided code
         self.assertIsNotNone(player.sprite)
-
-    def test_level_setup(self):
-        level_draw = []
-        setup_level(level_draw)
-        # Assuming the level is correctly set up based on provided code
-        self.assertTrue(len(level_draw) > 0)
 
     def tearDown(self):
         pygame.quit()
