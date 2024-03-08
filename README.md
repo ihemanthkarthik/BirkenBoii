@@ -1,5 +1,5 @@
 # BirkenBoii
-Birken Boiii is a simple platformer game created using Pygame. It features a pink character navigating through a level filled with obstacles, traps, and platforms. The game includes basic movements such as running, jumping, and a double jump. Be cautious of the fire traps!
+Birken Boii is a simple platformer game created using Pygame. It features a pink character navigating through a level filled with obstacles, traps, and platforms. The game includes basic movements such as running, jumping, and a double jump. Be cautious of the fire traps!
 
 ## Installation
 1. Clone the repository: https://github.com/ihemanthkarthik/BirkenBoii.git
