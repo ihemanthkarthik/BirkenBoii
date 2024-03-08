@@ -17,5 +17,17 @@ class TestGetBlock(unittest.TestCase):
         self.assertNotEqual(block.get_width(), 32)
         self.assertNotEqual(block.get_height(), 32)
 
+class TestHandleVerticalCollision(unittest.TestCase):
+    def test_handle_vertical_collision(self):
+        player = Player(100, 100, 50, 50)
+        object1 = mario.Object(100, 200, 50, 50)
+        object2 = mario.Object(100, 300, 50, 50)
+
+        collided_objects = mario.handle_vertical_collision(player, [object1, object2], 10)
+
+        self.assertIn(object1, collided_objects)
+        self.assertEqual(player.rect.y, 200)
+        self.assertEqual(player.y_vel, 0)
+
 if __name__ == "__main__":
     unittest.main()
