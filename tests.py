@@ -10,5 +10,12 @@ class TestSpriteSheets(unittest.TestCase):
         self.assertTrue("idle_left" in sprites)
         self.assertTrue("idle_right" in sprites)
 
+class TestGetBlock(unittest.TestCase):
+    def test_get_block(self):
+        block = mario.get_block(32)
+        self.assertIsInstance(block, pygame.Surface)
+        self.assertEqual(block.get_width(), 32)
+        self.assertEqual(block.get_height(), 32)
+
 if __name__ == "__main__":
     unittest.main()
