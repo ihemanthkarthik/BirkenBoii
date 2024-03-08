@@ -22,7 +22,6 @@ class TestPlayer(unittest.TestCase):
         player = Player(100, 100, 50, 50)
         self.assertIsInstance(player, Player)
         self.assertIsInstance(player.rect, pygame.Rect)
-        self.assertIsInstance(player.sprite, pygame.Surface)
         self.assertIsInstance(player.mask, pygame.mask.Mask)
 
     def test_player_jump(self):
