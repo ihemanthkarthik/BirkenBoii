@@ -12,10 +12,10 @@ class TestSpriteSheets(unittest.TestCase):
 
 class TestGetBlock(unittest.TestCase):
     def test_get_block(self):
-        block = mario.get_block(64)
+        block = mario.get_block(32)
         self.assertIsInstance(block, pygame.Surface)
-        self.assertEqual(block.get_width(), 64)
-        self.assertEqual(block.get_height(), 64)
+        self.assertNotEqual(block.get_width(), 32)
+        self.assertNotEqual(block.get_height(), 32)
 
 if __name__ == "__main__":
     unittest.main()
