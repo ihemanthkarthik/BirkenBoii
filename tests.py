@@ -28,7 +28,7 @@ class TestPlayer(unittest.TestCase):
     def test_player_jump(self):
         player = Player(100, 100, 50, 50)
         player.jump()
-        self.assertGreater(player.y_vel, 0)
+        self.assertLess(player.y_vel, 0)
 
     def test_player_move_left(self):
         player = Player(100, 100, 50, 50)
