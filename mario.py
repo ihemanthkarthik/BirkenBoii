@@ -6,7 +6,7 @@ from os import listdir
 from os.path import isfile, join
 pygame.init()
 
-pygame.display.set_caption("Birken Boiii")
+pygame.display.set_caption("Birken Boii")
 
 LEVEL_MAP = [
 '                                 X',
