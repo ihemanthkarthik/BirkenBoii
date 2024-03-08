@@ -15,11 +15,17 @@ Space Bar: Jump
 ## Class Diagram
 A class diagram is a visual representation of the structure and relationships within a system, illustrating classes, their attributes, methods, and associations.
 
+**[Class Diagram]([https://github.com/ihemanthkarthik/MoneyTracker/blob/bc8ca2606e1ac479f47b5a2575682b1620aa54b0/src/main/python/connection.py](https://github.com/ihemanthkarthik/BirkenBoii/blob/ac163d9bb6ffd0d13b97221249e8c23e6b38a134/UML/Class%20Diagram.jpg))**
+
 ## Sequence Diagram
 A sequence diagram is a visual representation of the interactions and order of messages between objects or components in a system, illustrating the dynamic flow of behavior in a particular scenario.
 
+**[Sequence Diagram]([https://github.com/ihemanthkarthik/MoneyTracker/blob/bc8ca2606e1ac479f47b5a2575682b1620aa54b0/src/main/python/connection.py](https://github.com/ihemanthkarthik/BirkenBoii/blob/ac163d9bb6ffd0d13b97221249e8c23e6b38a134/UML/Sequence%20Diagram.jpg))**
+
 ## State Diagram 
 A state diagram is a visual representation of the possible states, transitions, and events that a system or object can undergo, providing a concise overview of its behavior.
+
+**[State Diagram]([https://github.com/ihemanthkarthik/MoneyTracker/blob/bc8ca2606e1ac479f47b5a2575682b1620aa54b0/src/main/python/connection.py](https://github.com/ihemanthkarthik/BirkenBoii/blob/ac163d9bb6ffd0d13b97221249e8c23e6b38a134/UML/State%20Diagram.jpg))**
 
 ## Features
 Platformer game with basic controls.
