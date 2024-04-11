@@ -2,7 +2,9 @@
 Birken Boii is a simple platformer game created using Pygame. It features a pink character navigating through a level filled with obstacles, traps, and platforms. The game includes basic movements such as running, jumping, and a double jump. Be cautious of the fire traps!
 
 ## References
-Tutorial References : **[FreeCodeCamp.org](https://www.youtube.com/watch?v=6gLeplbqtqg)**, **[ClearCode](https://www.youtube.com/watch?v=WViyCAa6yLI)**, **[Python Platform Tutorial](https://youtu.be/B6DrRN5z_uU?si=jY3u50wezT7SWVtz)**, **[Pixel Frog](https://pixelfrog-assets.itch.io/pixel-adventure-1)**
+Tutorial References : **[FreeCodeCamp.org](https://www.youtube.com/watch?v=6gLeplbqtqg)**, **[ClearCode](https://www.youtube.com/watch?v=WViyCAa6yLI)**, **[Python Platform Tutorial](https://youtu.be/B6DrRN5z_uU?si=jY3u50wezT7SWVtz)**
+
+Assets : **[Pixel Frog](https://pixelfrog-assets.itch.io/pixel-adventure-1)**
 
 BGM : **[BGM Audio](https://downloads.khinsider.com/game-soundtracks/album/pokemon-let-s-go-pikachu-and-let-s-go-eevee/1-03.%2520Title%2520Screen.mp3)**
 
